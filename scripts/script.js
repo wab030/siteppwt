@@ -83,3 +83,23 @@ function enableButton() {
         butcad.disabled = true;
     }
 }
+
+const fetchProducts = () => {
+    console.log("Cheguei na script para carregar os produtos");
+    //Carrega os produtos do banco de dados. 
+    //Endereço da api http://localhost:8000/GetProducts.php
+    fetch('http://localhost:8000/GetProducts.php')
+        .then((response) => {
+            if (response.status >= 200 && response.status < 300) {
+                return response.json()
+            }
+            throw new Error(response.statusText);
+        })
+        .then((products) => {
+            console.log(products);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
+
