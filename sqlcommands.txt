@@ -1,0 +1,11 @@
+create table products (idProduct int primary key not null auto_increment, productName varchar(50) not null, productDescription varchar(200) not null, productCategory varchar(15) not null, productUrlImage varchar(200) , productPrice float(10,2) not null, timestamp timestamp DEFAULT CURRENT_TIMESTAMP);
+
+alter table products modify productUrlImage varchar(500) not null;  
+
+Gravata vermelha
+Gravata vermelha de algodão
+Masculino
+99,00
+http://www.gravata.com/gravatavermelha.jpg
+
+insert into products (productName, productDescription, productCategory, productUrlImage, productPrice) values ('Gravata vermelha', 'Gravata vermelha de algodão', 'Masculino', 'http://www.gravata.com/gravatavermelha.jpg', 99.00);
