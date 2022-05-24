@@ -94,8 +94,9 @@ const showProducts = (products) => {
         console.log(products[i].name);
 
         let tagDivCard = document.createElement('div');
-        tagDivCard.setAttribute('class', 'card mx-auto mb-2');
+        tagDivCard.setAttribute('class', 'card mb-2');
         tagDivCard.setAttribute('style', 'width: 300px;');
+
 
         let tagImage = document.createElement('img');
         tagImage.setAttribute('class', 'card-img-top');

@@ -49,25 +49,24 @@
         </div>
       </div>
       <div class="col-10 maincontent">
-        <div class="row">
-          <h1 class="text-center">Produtos Femininos</h1>
-          <div id="femproducts">
-            <!-- aqui devem ser exibidos os produtos femininos -->
-            
-          </div>
+        <div class='row' id="femproducts">
+          <!-- aqui devem ser exibidos os produtos femininos -->
         </div>
-      
         <div class="row">
           <h1 class="text-center">Produtos Masculinos</h1>
         </div>
-       
+      </div>
+
+
     </div>
+
     <div class="row form">
       <h2 class="text-center">Formulário para inclusão de produtos</h2>
       <form action="http://localhost:8000/recebedados.php" method="get">
         <div class="mb-3">
           <label for="productName" class="form-label">Nome do produto</label>
-          <input type="text" class="form-control" id="productName" name="productName"           aria-describedby="productNameHelp">
+          <input type="text" class="form-control" id="productName" name="productName"
+            aria-describedby="productNameHelp">
           <div class="alert alert-danger mt-1" id="productname-error" role="alert">
             O nome do produto deve ter entre 0 e 50 caracteres
           </div>
